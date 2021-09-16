@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using SalesWebMVC2.Models.ViewModels;
 
 namespace SalesWebMVC2.Controllers
 {
