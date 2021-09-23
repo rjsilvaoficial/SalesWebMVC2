@@ -134,7 +134,6 @@ namespace SalesWebMVC2.Controllers
             {
                 Message = message,
                 RequestId = Activity.Current?.Id?? HttpContext.TraceIdentifier
-
             };
             return View(viewModel);
         }
