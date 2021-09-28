@@ -39,12 +39,12 @@ namespace SalesWebMVC2.Services
             try
             {
                 var obj = await _context.Seller.FindAsync(id);
-                _context.Remove(obj);
+                _context.Seller.Remove(obj);
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateException e)
+            catch (DbUpdateException)
             {
-                throw new IntegrityException(e.Message);
+                throw new IntegrityException("This seller dont be excluded, because have some sells included!");
             }
 
         }
